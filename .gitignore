@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Pyenv
+.python-version
+
+# VS Code
+.vscode/
+
+# IDEs
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Django
+db.sqlite3
+*.log
+staticfiles/
+media/
+local_settings.py
+
+# Project-specific
+.dist/
+
+# Migrations cache
+**/migrations/__pycache__/
+
+# Testing / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# type checkers
+.mypy_cache/
+
+# byte-compiled files
+*.pyc
+
+# node (if front-end tooling added later)
+node_modules/
+npm-debug.log*
+
+# Secrets (if you add any)
+.env
+
+# JetBrains
+*.iml
+
+# Windows image file cache
+ehthumbs.db
+
+# Temporary files
+*.swp
+*~
+
