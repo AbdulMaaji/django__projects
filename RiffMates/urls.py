@@ -8,6 +8,7 @@ urlpatterns = [
     path('credits/', home_views.credits, name='credits'),
     path('about/', home_views.about, name='about'),
     path('version-info/', home_views.version_info, name='version_info'),
-    path('', views.blog_home, name='blog_home'),
+    path('blog/', views.blog_home, name='blog_home'),
     path('', include('todo.urls')),
+    path('news/', home_views.news, name="news"),
 ]

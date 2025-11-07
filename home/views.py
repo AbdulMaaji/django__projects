@@ -47,3 +47,13 @@ def blog_home(request):
     ]
 
     return render(request, 'blog/home.html', {'posts': posts})
+
+
+def news(request):
+    data = {
+        'news': [
+            "RiffMates now has a news page!",
+            "RiffMates has it's first web page",
+        ],
+    }
+    return render(request, 'news/news2.html', data)
