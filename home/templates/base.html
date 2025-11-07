@@ -4,8 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}RiffMates{% endblock %}</title>
+    {# Page-specific styles can be provided by templates that extend this base
+    #} {% block styles %}{% endblock %}
   </head>
   <body>
-    {% block content %} {% endblock content %}
+    {% block content %}{% endblock %}
+
+    <!-- React root -->
+    <div id="react-root"></div>
+
+    <!-- Load React, ReactDOM and Babel (development only via CDN) -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Small React widget rendered into #react-root. Styles should be provided by the extending template. -->
+    <script type="text/babel">
+      function NewsWidget() {
+        return (
+          <div className="news-box">
+            <h2>Quick React News</h2>
+            <p>
+              This tiny React widget lives in <strong>base.html</strong> and is
+              styled by the extending template.
+            </p>
+            <ul>
+              <li>Rendered with React 18 (CDN)</li>
+              <li>
+                Styles come from the page (see <code>news2.html</code>)
+              </li>
+              <li>Easy to extend with props or APIs</li>
+            </ul>
+          </div>
+        );
+      }
+
+      const rootEl = document.getElementById("react-root");
+      if (rootEl) {
+        const root = ReactDOM.createRoot(rootEl);
+        root.render(<NewsWidget />);
+      }
+    </script>
+
+    {% block extra_scripts %}{% endblock %}
   </body>
 </html>

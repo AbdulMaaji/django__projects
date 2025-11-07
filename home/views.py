@@ -56,4 +56,16 @@ def news(request):
             "RiffMates has it's first web page",
         ],
     }
+    # Render the previous/news folder template at /news/
     return render(request, 'news/news2.html', data)
+
+
+def news_test(request):
+    """Render the new news2.html (the React-styled version) at /news-test/"""
+    data = {
+        'news': [
+            "RiffMates now has a news page!",
+            "RiffMates has it's first web page",
+        ],
+    }
+    return render(request, 'news_test.html', data)

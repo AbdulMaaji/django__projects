@@ -1,14 +1,15 @@
 from django.contrib import admin
 from django.urls import path, include
 from home import views as home_views
-from home import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('credits/', home_views.credits, name='credits'),
     path('about/', home_views.about, name='about'),
     path('version-info/', home_views.version_info, name='version_info'),
-    path('blog/', views.blog_home, name='blog_home'),
+    path('news/', home_views.news, name='news'),
+    path('news-test/', home_views.news_test, name='news_test'),
+    path('blog/', home_views.blog_home, name='blog_home'),
     path('', include('todo.urls')),
-    path('news/', home_views.news, name="news"),
 ]
