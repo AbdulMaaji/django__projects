@@ -10,7 +10,7 @@ def credits(request):
 
 
 def about(reguest):
-    content = "<html><body><h1>Hello World!</h1></body></html>"
+    content = "<html><body><h1>Hello World!\nThis is a Django Project I'm building tryna figure backend. Have fun as you go through my messy code😉</h1></body></html>"
 
     return HttpResponse(content, content_type="text/html")
 
