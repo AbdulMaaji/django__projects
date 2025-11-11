@@ -11,5 +11,6 @@ urlpatterns = [
     path('news/', home_views.news, name='news'),
     path('news-test/', home_views.news_test, name='news_test'),
     path('blog/', home_views.blog_home, name='blog_home'),
-    path('', include('todo.urls')),
+    path('todo/', include('todo.urls')),
+    path('bands/', include('bands.urls')),
 ]
