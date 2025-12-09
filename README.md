@@ -1,0 +1,1 @@
+This is a Django project I'm committed to learning everyday and pushing to my Github account
