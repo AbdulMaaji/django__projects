@@ -1,9 +1,0 @@
-{% extends "base.html" %} {% block title %} {{block.super}}: News {% endblock %}
-{% block content %}
-<h1>RiffMates News (2)</h1>
-<ul>
-  {% for item in news %}
-  <li>{{ item }}</li>
-  {% endfor %}
-</ul>
-{% endblock content %}
