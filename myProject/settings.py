@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'RiffMates.urls'
+ROOT_URLCONF = 'myProject.urls'
 
 TEMPLATES = [
     {
@@ -66,7 +66,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'RiffMates.wsgi.application'
+WSGI_APPLICATION = 'myProject.wsgi.application'
 
 
 # Database
