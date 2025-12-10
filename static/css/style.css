@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    font-size: 3rem;
+    font-size: 2rem;
     background-color: black;
     color: whitesmoke;
     display: flex;
@@ -14,7 +14,7 @@ body {
 }
 
 h1, p {
-    text-align: center;
+    text-align: right;
 }
 
 nav {
@@ -27,7 +27,8 @@ nav {
 main {
     flex-grow: 1;
     display: grid;
-    place-content: center;
+    place-content: left;
+    font-size: 1rem;
 }
 
 a {
