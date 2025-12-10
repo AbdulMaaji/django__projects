@@ -10,7 +10,7 @@ body {
     background-color: black;
     color: whitesmoke;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
 }
 
 h1, p {
@@ -25,9 +25,9 @@ nav {
 }
 
 main {
-    flex-grow: 1;
-    display: grid;
-    place-content: left;
+    display: flex;
+    justify-content: left;
+    align-items: left;
     font-size: 1rem;
 }
 
