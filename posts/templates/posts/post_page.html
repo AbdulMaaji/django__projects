@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.date }}</p>
+        <p>{{ post.body }}</p>
+        <p style="margin-top: 10px;">Take me back to <a href="/posts">Posts</a> page.</p>
+    </section>
+{% endblock %}
