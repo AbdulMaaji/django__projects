@@ -6,15 +6,16 @@
 
 body {
     min-height: 100vh;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: black;
     color: whitesmoke;
     display: flex;
     flex-direction: column;
 }
 
-h1, p {
-    text-align: right;
+h1, h2, p {
+    /* text-align: center; */
+    margin: 10px;
 }
 
 nav {
@@ -26,9 +27,7 @@ nav {
 
 main {
     display: flex;
-    justify-content: left;
-    align-items: left;
-    font-size: 1rem;
+    place-content: left;
 }
 
 a {
