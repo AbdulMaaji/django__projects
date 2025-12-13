@@ -7,7 +7,7 @@ class Post(models.Model):
     body = models.TextField()
     slug = models.SlugField()
     date = models.DateTimeField(auto_now_add=True)
-    banner = models.ImageField(default='fallback.png', blank=True)
+    banner = models.ImageField(upload_to='banners/', blank=True, null=True)
 
     def __str__(self):
         return self.title
