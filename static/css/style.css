@@ -41,3 +41,9 @@ a {
 a:hover {
     opacity: .85;
 }
+
+.banner {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+}
