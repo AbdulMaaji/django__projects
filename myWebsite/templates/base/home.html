@@ -5,14 +5,29 @@
 {% endblock %}
 
 {% block content %}
+{% load static %}
         <br>
         <div class='container'>
             <div class='row'>
                 <div class='col-md-3'>
-                    <div class="card card-body"></div>
+                    <div class="card card-body" id="profile-wrapper">
+                        <img id="profile-pic" src="{% static 'images/fallback.jpg' %}" alt="">
+                        <br>
+                        <h4>Hi I'm Abdul</h4>
+                        <p id="about-me">I love coding, doing research and collaborating.</p>
+                    </div>
                 </div>
                 <div class='col-md-9'>
-                    <div class="card card-body"></div>
+                    <div class="card card-body">
+                        <h4>My First Job as a Developer</h4>
+                        <br>
+                        <p>2 years after writing my first "Hello World" program on August 12th 2025 (while on a holiday from varsity) I had a family friend who opened a new restaurant and I reached out to him and offered to build a website for his shop.</p>
+                        <p>This charity gig turned out great and I got patronized by them and got another offer from another food restaurant to build a fine food ordering web-app.</p>
+                        <p>I'm really glad I did that, from one charitable work to high paying recommendations.</p>
+                        <ul class="social-links">
+                            <li><img src="" alt=""></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <br>

@@ -50,5 +50,21 @@ a:hover {
 
 /* Portfolio CSS */
 .container {
-    /* background-color: azure; */
+    background-color: rgb(0, 0, 0);
+}
+
+.card {
+    color: black;
+}
+
+#profile-wrapper {
+    text-align: center;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
